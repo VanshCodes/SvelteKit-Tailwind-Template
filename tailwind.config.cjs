@@ -3,7 +3,12 @@ module.exports = {
   purge: ['./src/**/*.{svelte,html,css}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#1c1a32",
+        secondary: "#f22eda",
+      }
+    },
   },
   variants: {
     extend: {},

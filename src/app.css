@@ -1,3 +1,20 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import "tailwindcss/utilities";
+@layer components {
+    .mobilenav{
+        grid-template-areas: "logo icons"
+                              "nav-items nav-items"
+        ;
+    }
+    .largenav{
+        grid-template-areas: "logo nav-items icons";
+    }
+    .nav-item{
+        @apply transform p-2 hover:text-blue-200 hover:scale-125 cursor-pointer;
+    }
+}
+.primary-font {
+    font-family: 'Lato', sans-serif;
+}
