@@ -2,6 +2,8 @@
 @import "tailwindcss/components";
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import "tailwindcss/utilities";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100&display=swap');
 @layer components {
     .mobilenav{
         grid-template-areas: "logo icons"
@@ -16,5 +18,21 @@
     }
 }
 .primary-font {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.darken {
+    filter: brightness(50%);
 }
